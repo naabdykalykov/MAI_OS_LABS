@@ -28,7 +28,7 @@ int main() {
         int fd = open(filename, O_RDONLY);
         if (fd == -1) {
             perror("open");
-            exit(EXIT_FAILURE);
+            exit(EXIT_FAILURE); 
         }
         
         dup2(fd, STDIN_FILENO);
@@ -56,3 +56,5 @@ int main() {
 
     return 0;
 }
+//нужны проверки на всё
+//разобраться со scanf
